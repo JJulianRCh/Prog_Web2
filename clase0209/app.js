@@ -5,7 +5,7 @@ function mostrarOpciones() {
         Opciones Disponibles
         1.= Agregar Tarea
         2.- Ver todas las Tareas
-        3.- Marcar mis tareas como completads
+        3.- Marcar mis tareas como completadas
         4.- Salir
         `));
 }
@@ -51,8 +51,12 @@ function agregarTarea() {
 
 function verTareas() {
     for (let tarea of tareas) {
-        let msj = tarea.nombre + ", estado: " + ((tarea.completada) ? "Completa" : "Incompleta");
+        let msj = tarea.nombre + ", estado: " + ((tarea.completada) ? "Completada" : "Incompleta");
         console.clear();
         console.log(msj);
     }
+}
+
+function completarTareas() {
+    
 }
